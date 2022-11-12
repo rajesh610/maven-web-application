@@ -106,6 +106,7 @@
 	      <name>wallmart Snapshot Repository </name>
 	      <url>http://65.0.130.176:9533/rajeshsoftware/repository/wallmart-snapshot/</url>
 	    </snapshotRepository>
+		
 	    
 	</distributionManagement>
 	
