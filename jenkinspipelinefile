@@ -23,4 +23,4 @@ stage('Send Email Notification')
 {
     emailext body: 'build status - pipeline scripted way', subject: 'build status - pipeline scripted way', to: 'rajeshrm5059@gmail.com'
 }
-}
+
