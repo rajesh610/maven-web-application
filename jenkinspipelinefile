@@ -1,0 +1,27 @@
+node
+{
+    def mavenHome = tool name: "maven3.8.6"
+    
+    stage('checkout')
+    {
+        git credentialsId: '163f616f-aedc-43bc-8399-f5ba1d385f9c', url: 'https://github.com/rajesh610/maven-web-application.git'
+    }
+stage('Build')
+
+{
+    sh "${mavenHome}/bin/mvn clean package deploy"
+}
+/*
+  stage('deploy Appinto Tomcat server')
+{    
+     sshagent(['750a53ac-8b68-4bd2-ac1d-60618809f96d']) {
+    // some block
+    sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@43.204.32.119:/opt/apache-tomcat-9.0.68/webapps/"
+  */  
+}
+stage('Send Email Notification')
+{
+    emailext body: 'build status - pipeline scripted way', subject: 'build status - pipeline scripted way', to: 'rajeshrm5059@gmail.com'
+}
+}  
+}
