@@ -98,13 +98,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>wallmart-Releases-Repository</name>
-	      <url>http://http://13.233.204.97:8081/repository/wallmart-release-repository//</url>
+	      <url>http://http://13.233.114.7:8081/repository/wallmart-release-repository//</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>wallmart-Snapshot-Repository </name>
-	      <url>http://13.233.204.97:8081/repository/wallmart-snapshot-repository//</url>
+	      <url>http://13.232.114.7:8081/repository/wallmart-snapshot-repository//</url>
 	    </snapshotRepository>
 		
 	    
