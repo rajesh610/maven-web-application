@@ -104,7 +104,7 @@
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>wallmart-Snapshot-Repository </name>
-	      <url>http://54.162.176.69:8081/repository/wallmart-snapshot-repository/</url>
+	      <url>http://54.162.176.69:8081/repository/rajesh-snapshot/ </url>
 	    </snapshotRepository>
 		
 	    
