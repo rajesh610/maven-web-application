@@ -98,13 +98,13 @@
 	    <repository>
 	      <id>raj</id>
 	      <name>wallmart-Releases-Repository</name>
-	      <url>http://34.203.241.83:8081/repository/rajesh-release/</url>
+	      <url>http://50.17.84.244:8081/repository/rajesh-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>raj</id>
 	      <name>wallmart-Snapshot-Repository </name>
-	      <url>http://34.203.241.83:8081/repository/rajesh-snapshot/ </url>
+	      <url>http://50.17.84.244:8081/repository/rajesh-snapshot/ </url>
 	    </snapshotRepository>
 		
 	    
