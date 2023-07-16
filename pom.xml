@@ -100,13 +100,13 @@
 	
 	    <repository>
 	      <id>raj</id>
-	      <name>wallmart-Releases-Repository</name>
+	      <name>maven-release-rah</name>
 	      <url>http://localhost:8081/repository/maven-release-rah/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>raj</id>
-	      <name>wallmart-Snapshot-Repository </name>
+	      <name>maven-snapshot-raj </name>
 	      <url>http://localhost:8081/repository/maven-snapshot-raj/ </url>
 	    </snapshotRepository>
 		
