@@ -166,25 +166,24 @@
              <plugins>
                <plugin>
                  <groupId>org.codehaus.cargo</groupId>
-                 <artifactId>cargo-maven2-plugin</artifactId>
+                 <artifactId>cargo-maven-plugin</artifactId>
                  <version>1.5.0</version>
                  <configuration>
                     <container>
-                      <containerId>tomcat7x</containerId>
+                      <containerId>tomcat9x</containerId>
                       <type>installed</type>
-                      <home>Insert absolute path to tomcat 7 installation</home>
+                      <home>Insert absolute path to tomcat 9 installation</home>
                     </container>
                     <configuration>
                         <type>existing</type>
-                        <home>Insert absolute path to tomcat 7 installation</home>
+                        <home>Insert absolute path to tomcat 9 installation</home>
                     </configuration>
                  </configuration>
                </plugin>
              </plugins>
         </build>
 			
-</plugins>
-	</build>
+
 	
 	
 </project>
