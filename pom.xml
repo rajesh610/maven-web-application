@@ -163,7 +163,7 @@
                               </configuration>
                         </plugin>
         
-             <plugins>
+            
                <plugin>
                  <groupId>org.codehaus.cargo</groupId>
                  <artifactId>cargo-maven-plugin</artifactId>
