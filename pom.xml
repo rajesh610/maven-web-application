@@ -159,7 +159,7 @@
                               <configuration>
                                    <url>http://localhost:8888/manager/text</url>
                                    <server>TomcatServer</server>
-                                   <path>/myapp</path>
+                                   <path>/c:/programfiles/Apache Software Foundation/Tomcat 9.0/webapps</path>
                               </configuration>
                         </plugin>
 			
