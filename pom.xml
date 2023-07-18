@@ -162,7 +162,7 @@
                                    <path>my app</path>
                               </configuration>
                         </plugin>
-        <build>
+        
              <plugins>
                <plugin>
                  <groupId>org.codehaus.cargo</groupId>
