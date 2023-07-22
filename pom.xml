@@ -172,11 +172,11 @@
                     <container>
                       <containerId>tomcat9x</containerId>
                       <type>installed</type>
-                      <home>Insert absolute path to tomcat 9 installation</home>
+                      <home>Insert absolute path to tomcat installation</home>
                     </container>
                     <configuration>
                         <type>existing</type>
-                        <home>Insert absolute path to tomcat 9 installation</home>
+                        <home>Insert absolute path to tomcat installation</home>
                     </configuration>
                  </configuration>
                </plugin>
