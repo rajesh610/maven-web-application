@@ -162,7 +162,7 @@
                                  <username>rajesh</username>
                                  <password>r@9553154482</password>
                                  </configuration>
-                        </plugin>
+              </plugin>
 	</build>	
 
 	
