@@ -151,36 +151,18 @@
 				</configuration>
 			</plugin>
 
-			
 			<plugin>
-                              <groupId>org.apache.tomcat.maven</groupId>
-                              <artifactId>cargo-maven3-plugin </artifactId>
-                              <version>2.2</version>
-                              <configuration>
-                                   <url>http://localhost:8080/manager/text</url>
-                                   <server>TomcatServer</server>
-                                   <path>my app</path>
-                              </configuration>
+                            <groupId>org.apache.tomcat.maven</groupId>
+                            <artifactId>tomcat7-maven-plugin</artifactId>
+                            <version>2.2</version>
+                            <configuration>
+                                 <url>http://localhost:8080/manager/text</url>
+                                 <server>tomcatserver</server>
+                                 <path>/mycontext</path>
+                                 <username>rajesh</username>
+                                 <password>r@9553154482</password>
+                                 </configuration>
                         </plugin>
-        
-            
-               <plugin>
-                 <groupId>org.codehaus.cargo</groupId>
-                 <artifactId>cargo-maven-plugin</artifactId>
-                 <version>1.5.0</version>
-                 <configuration>
-                    <container>
-                      <containerId>tomcat9x</containerId>
-                      <type>installed</type>
-                      <home>Insert absolute path to tomcat installation</home>
-                    </container>
-                    <configuration>
-                        <type>existing</type>
-                        <home>Insert absolute path to tomcat installation</home>
-                    </configuration>
-                 </configuration>
-               </plugin>
-             </plugins>
         </build>
 			
 
