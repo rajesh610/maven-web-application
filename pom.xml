@@ -161,7 +161,7 @@
                                  <path>/mycontext</path>
                                  <username>rajesh</username>
                                  <password>r@9553154482</password>
-                                 </configuration>
+                            </configuration>
          </plugins>
 	</build>	
 
