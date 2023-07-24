@@ -116,7 +116,7 @@
 	<build>
 		<finalName>maven-web-application</finalName>
 		
-		<plugins>
+	 <plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -162,7 +162,7 @@
                                  <username>rajesh</username>
                                  <password>r@9553154482</password>
                                  </configuration>
-              </plugin>
+         </plugin>
 	</build>	
 
 	
