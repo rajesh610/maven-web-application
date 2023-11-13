@@ -1,4 +1,4 @@
-FROM Ubuntu
+FROM ubuntu
 
 MAINTAINER rajesh.com
 
