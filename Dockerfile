@@ -1,4 +1,4 @@
-FROM centos
+FROM Ubuntu
 
 MAINTAINER rajesh.com
 
