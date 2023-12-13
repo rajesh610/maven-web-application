@@ -1,25 +1,13 @@
-FROM atlassian/jira-software:8.10.0
+FROM openjdk:8-alpine
 
-LABEL maintainer="mritd <mritd@linux.com>"
+# Required for starting application up.
+RUN apk update && apk add /bin/sh
 
-ARG TZ="Asia/Shanghai"
+RUN mkdir -p /opt/app
+ENV PROJECT_HOME /opt/app
 
-ENV TZ ${TZ}
-ENV AGENT_PATH /opt/atlassian-agent.jar
+COPY target/spring-boot-mongo-1.0.jar $PROJECT_HOME/spring-boot-mongo.jar
 
-COPY atlassian-agent.jar ${AGENT_PATH}
-COPY hijack.sh /hijack.sh
-
-RUN set -x \
-    && export DEBIAN_FRONTEND=noninteractive \
-    && apt update \
-    && apt upgrade -y \
-    && apt install tzdata -y \
-    && chown ${RUN_USER}:${RUN_GROUP} ${AGENT_PATH} \
-    && ln -sf /usr/share/zoneinfo/${TZ} /etc/localtime \
-    && echo ${TZ} > /etc/timezone \
-    && dpkg-reconfigure --frontend noninteractive tzdata \
-    && apt autoremove -y \
-    && apt autoclean -y
-
-CMD ["/hijack.sh"]
+WORKDIR $PROJECT_HOME
+EXPOSE 8080
+CMD ["java" ,"-jar","./spring-boot-mongo.jar"]
