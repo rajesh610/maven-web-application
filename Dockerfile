@@ -1,3 +1,2 @@
-FROM tomcat:8.0.20-jre8
-
-COPY java-web-app.war /usr/local/tomcat/webapps/gradle-web-app.war
+FROM tomcat:8.0.18-jre8
+COPY target/maven-web-application.war /usr/local/tomcat/webapps/maven-web-application.war
